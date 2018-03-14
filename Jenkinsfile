@@ -4,8 +4,8 @@ node ('node'){
 		checkout scm
 	}
 		stage ('Build') {
-        	sh "echo 'shell scripts to build project...'"
-		mvn package	
+        	//sh "echo 'shell scripts to build project...'"
+		sh "mvn package"	
         }
 }
  catch (err) {
